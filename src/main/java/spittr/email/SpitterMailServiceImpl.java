@@ -32,7 +32,7 @@ public class SpitterMailServiceImpl implements SpitterMailService {
     message.setTo(to);
     message.setSubject("New spittle from " + spitterName);
     message.setText(spitterName + " says: " + spittle.getText());  /*设置消息文本*/
-    mailSender.send(message);  il*/
+    mailSender.send(message);  /*发送email*/
   }
 
   /* (non-Javadoc)
