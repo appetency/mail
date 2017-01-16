@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.icegreen:greenmail-spring:1.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.icegreen/greenmail-spring/1.4.0/60fbc0f270f2887886acf792b121a1a488376668/greenmail-spring-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.icegreen/greenmail-spring/1.4.0/1c78fbd59e5adf5ce5bc8009498fc562af849595/greenmail-spring-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
