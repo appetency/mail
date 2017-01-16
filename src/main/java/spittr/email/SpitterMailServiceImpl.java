@@ -1,16 +1,15 @@
 package spittr.email;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
-
 import spittr.domain.Spittle;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
 
 @Component
 public class SpitterMailServiceImpl implements SpitterMailService {
@@ -27,13 +26,13 @@ public class SpitterMailServiceImpl implements SpitterMailService {
    */
   @Override
   public void sendSimpleSpittleEmail(String to, Spittle spittle) {
-    SimpleMailMessage message = new SimpleMailMessage();
+    SimpleMailMessage message = new SimpleMailMessage(); /*构建消息*/
     String spitterName = spittle.getSpitter().getFullName();
-    message.setFrom("noreply@spitter.com");
+    message.setFrom("noreply@spitter.com");  /*Email地址*/
     message.setTo(to);
     message.setSubject("New spittle from " + spitterName);
-    message.setText(spitterName + " says: " + spittle.getText());
-    mailSender.send(message);
+    message.setText(spitterName + " says: " + spittle.getText());  /*设置消息文本*/
+    mailSender.send(message);  il*/
   }
 
   /* (non-Javadoc)
